@@ -1,10 +1,26 @@
 *{
-    color: rgb(0, 12, 12);
+    margin: 0;
 }
 
+h1{
+    padding-left: 25%;
+}
+
+h2{
+    color: blue;
+    padding: 5% 0;
+}
+
+
 .accordion{
+    width: 90%;
+    padding: 5%;
+}
+
+.accordion-image img{
     width: 100%;
 }
+
 
 .accordion-label-name{
     display: flex;
@@ -21,11 +37,9 @@
     background-size: 100%;
   }
 
-.accordion:hover .accordion-label-pick{
-    display: block;
-}
 
-.accordion-item:hover{
+
+.accordion *{
     cursor: grabbing;
 }
 
@@ -41,15 +55,31 @@
     display: block;
   }
 
+  .accordion-item input[type="radio"]:checked ~ label h2 {
+    color: black;
+  }
+
   .accordion-item input[type="radio"]:checked ~ label .accordion-label-pick {
     background-image: url(cross.png);
   }
 
-  .accordion-item label:hover .accordion-image {
-    display: block;
-  }
 
-  .accordion-image:hover {
-    display: block;
-  }
 
+
+
+
+  @media (hover: hover) {
+
+    .accordion:hover .accordion-label-pick{
+        display: block;
+    }
+
+    .accordion-item label:hover .accordion-image {
+        display: block;
+      }
+
+      .accordion-image:hover {
+        display: block;
+      }
+
+  }
