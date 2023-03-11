@@ -1,0 +1,31 @@
+*{
+    color: rgb(0, 12, 12);
+}
+
+.accordion{
+    width: 100%;
+}
+
+.accordion-item:hover{
+    cursor: grabbing;
+}
+
+.accordion-image{
+    display: none;
+}
+
+.accordion-item input[type="radio"] {
+    display: none;
+  }
+  
+  .accordion-item input[type="radio"]:checked ~ label .accordion-image {
+    display: block;
+  }
+
+  .accordion-item label:hover .accordion-image {
+    display: block;
+  }
+
+  .accordion-image:hover {
+    display: block;
+  }
