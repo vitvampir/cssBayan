@@ -6,6 +6,25 @@
     width: 100%;
 }
 
+.accordion-label-name{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.accordion-label-pick{
+    display: none;
+    background-image: url(plus.png);
+    width: 30px;
+    height: 30px;
+    background-size: 100%;
+  }
+
+.accordion:hover .accordion-label-pick{
+    display: block;
+}
+
 .accordion-item:hover{
     cursor: grabbing;
 }
@@ -22,6 +41,10 @@
     display: block;
   }
 
+  .accordion-item input[type="radio"]:checked ~ label .accordion-label-pick {
+    background-image: url(cross.png);
+  }
+
   .accordion-item label:hover .accordion-image {
     display: block;
   }
@@ -29,3 +52,4 @@
   .accordion-image:hover {
     display: block;
   }
+
