@@ -72,7 +72,38 @@ h2{
     background-image: url(cross.png);
   }
 
+  @media (min-width: 820px) {
+    
+    h2{
+      font-size: 2em;
+    }
 
+
+  }
+
+  @media (min-width: 1080px) {
+    
+    h1{
+      font-size: 3em;
+    }
+
+    h2{
+      font-size: 2.1em;
+      color: blue;
+      padding: 1% 0;
+    }
+
+    .accordion {
+      width: 60%;
+      padding: 3% 20%;
+    }
+
+    .accordion-image img{
+      width: 30%;
+  }
+
+    
+  }
 
 
 
