@@ -35,6 +35,8 @@ h2{
     width: 30px;
     height: 30px;
     background-size: 100%;
+    transform: rotate(0deg);
+    transition: transform 0.5s ease-in-out;
   }
 
 
@@ -69,7 +71,9 @@ h2{
   }
 
   .accordion-item input[type="radio"]:checked ~ label .accordion-label-pick {
-    background-image: url(cross.png);
+ 
+    transform: rotate(45deg);
+
   }
 
   @media (min-width: 820px) {
@@ -95,11 +99,12 @@ h2{
 
     .accordion {
       width: 60%;
-      padding: 3% 20%;
+      margin: 0 auto;
     }
 
     .accordion-image img{
       width: 30%;
+      padding: 2% 35%;
   }
 
     
@@ -122,4 +127,28 @@ h2{
         display: block;
       }
 
+      .accordion:hover h2{
+        color: black;
+    }
+
+  }
+
+
+  .accordion-item label:active h2{
+    color: blue;
+
+  }
+
+  .accordion-item input[type="radio"]:checked ~ label:active h2 {
+    color: blue;
+  }
+
+  .accordion-item label:active .accordion-label-pick{
+    background-image: url(cross.png);
+
+  }
+
+  
+  .accordion-item label:active .accordion-image{
+    opacity: 0.6;
   }
