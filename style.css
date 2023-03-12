@@ -45,6 +45,13 @@ h2{
 
 .accordion-image{
     display: none;
+    animation: openImage 1.0s ease-in-out forwards;
+
+}
+
+@keyframes openImage {
+  from {  transform: scale(0.5); }
+  to {  transform: scale(1); }
 }
 
 .accordion-item input[type="radio"] {
@@ -53,6 +60,8 @@ h2{
   
   .accordion-item input[type="radio"]:checked ~ label .accordion-image {
     display: block;
+    transition: width 2s;
+
   }
 
   .accordion-item input[type="radio"]:checked ~ label h2 {
